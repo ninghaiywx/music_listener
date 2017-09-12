@@ -84,7 +84,7 @@ public class MusicActivity extends AppCompatActivity {
      * 设置动画
      */
     private void setAnim() {
-        ob = ObjectAnimator.ofFloat(musicImage, "Rotation", 0f, 360f).setDuration(ROTATE_TIME);
+        ob = ObjectAnimator.ofFloat(musicImage, "Rotation", 0f , 360f).setDuration(ROTATE_TIME);
         ob.setInterpolator(new LinearInterpolator());
         ob.setRepeatCount(ValueAnimator.INFINITE);
         ob.setRepeatMode(ValueAnimator.RESTART);
@@ -95,7 +95,7 @@ public class MusicActivity extends AppCompatActivity {
      */
     private void initBroadCast() {
         IntentFilter intentFilter=new IntentFilter();
-        intentFilter.addAction("com.yue.broadcast.OPERATE");
+        intentFilter.addAction("com.yue.broadcast.CHANGE_UI");
         receiver=new ChangeMusicInfoUIReceiver();
         registerReceiver(receiver,intentFilter);
     }

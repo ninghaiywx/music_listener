@@ -136,7 +136,6 @@ public class MusicService extends Service {
         @Override
         public void onReceive(Context context, Intent intent) {
             int code=intent.getIntExtra("code",0);
-            int pos=0;
                 switch (code) {
                     case PLAY_PAUSE:
                         if (MusicService.mediaPlayer.isPlaying()) {
