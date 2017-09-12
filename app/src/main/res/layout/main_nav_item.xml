@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp">
+    <ImageView
+        android:id="@+id/nav_item_pic"
+        android:layout_gravity="center"
+        android:src="@mipmap/music_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:id="@+id/nav_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_large"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/my_music"/>
+</LinearLayout>

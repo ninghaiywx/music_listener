@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yue.music_listener.activity.MusicActivity">
+    <ImageView
+        android:id="@+id/music_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@color/over_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/music_image_icon"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/album_icon"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+        <LinearLayout
+            android:id="@+id/music_bottom"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/music_play_mode"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/random_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/music_play_previous"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/previous_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/music_play"
+                    android:layout_gravity  ="center"
+                    android:src="@mipmap/play_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/music_play_next"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/next_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/music_menu"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/menu_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <SeekBar
+            android:layout_marginBottom="25dp"
+            android:layout_above="@id/music_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

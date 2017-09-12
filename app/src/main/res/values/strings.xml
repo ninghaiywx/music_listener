@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">聆听</string>
+    <string name="my_music">我的歌曲</string>
+    <string name="my_favourite">我喜欢</string>
+    <string name="my_list">我的歌单</string>
+    <string name="my_history">最近播放</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+    <ImageView
+        android:id="@+id/music_list_item_pic"
+        android:layout_margin="12dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/album_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/music_list_item_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你是我的眼"
+        android:textColor="@color/colorWhite"
+        android:layout_toRightOf="@id/music_list_item_pic"
+        android:layout_alignTop="@id/music_list_item_pic"
+        android:textSize="@dimen/text_size_mid"/>
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/music_list_item_name_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="林宥嘉.未知专辑"
+        android:layout_below="@id/music_list_item_song"
+        android:layout_alignLeft="@id/music_list_item_song"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/text_dark_gray"/>
+    <ImageView
+        android:id="@+id/music_list_item_more"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/more_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+    <View
+        android:background="@color/line_color"
+        android:layout_below="@id/music_list_item_pic"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</RelativeLayout>
